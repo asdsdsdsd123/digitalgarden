@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"\"中文笔记名\"","permalink":"/\"中文笔记名\"/","tags":["gardenEntry"]}
+{"dg-publish":true,"dg-permalink":"\"中文笔记名\"","permalink":"/\"中文笔记名\"/"}
 ---
 
 
