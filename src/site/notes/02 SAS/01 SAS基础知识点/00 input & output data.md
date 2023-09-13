@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/02 SAS/01 SAS基础知识点/00 input & output data/"}
+{"dg-publish":true,"dg-permalink":"\"中文笔记名\"","permalink":"/\"中文笔记名\"/"}
 ---
 
 
