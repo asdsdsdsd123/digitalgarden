@@ -3,5 +3,7 @@
 ---
 
 
-[var1](var1.md)
-[var2](var2.md)
+
+[[var1\|var1]]
+[[var2\|var2]]
+[[vars/test\|test]]
