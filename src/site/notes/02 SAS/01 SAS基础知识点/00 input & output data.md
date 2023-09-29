@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"\"中文笔记名\"","permalink":"/\"中文笔记名\"/","dgPassFrontmatter":true}
+{"dg-publish":true,"dg-permalink":"\"00 input & output data\"","permalink":"/\"00 input & output data\"/","dgPassFrontmatter":true}
 ---
 
 
