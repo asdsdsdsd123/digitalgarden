@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"00 input & output data.md","permalink":"/00 input & output data.md/","dgPassFrontmatter":true}
+{"dg-publish":true,"dg-permalink":null,"permalink":"/02 SAS/01 SAS基础知识点/00 input & output data/","dgPassFrontmatter":true}
 ---
 
 
