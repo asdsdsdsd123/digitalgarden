@@ -106,7 +106,7 @@ cards;
 
 ### 4.3. proc import
 
-- [可通过proc import读取外部文件](04%20Proc%20step#1.3%20proc%20import)
+- [[02 SAS/01 SAS基础知识点/04 Proc step#1.3 proc import\|04 Proc step#1.3 proc import]]
 
 ## 5. SAS数据集导出外部文件
 
@@ -124,11 +124,11 @@ data _nul1_;
 run;
 ```
 - `也可put多行`（3行，一条观测，Put外部数据三行-tricker/price/inductry）：
-![](/img/user/Z appendix/Pasted image 20221007183108.png)
-- [sas也可put变量值到log](03%20sas%20statement#1%203%20put，输出value到log)
+![../../Z appendix/Pasted image 20221007183108.png](/img/user/Z%20appendix/Pasted%20image%2020221007183108.png)
+- [[02 SAS/01 SAS基础知识点/03 sas statement#1 3 put，输出value到log\|03 sas statement#1 3 put，输出value到log]]
 
 ### 5.2. proc export
--  [可通过proc export输出](04%20Proc%20step#1.2%20proc%20export)
+-  [[02 SAS/01 SAS基础知识点/04 Proc step#1.2 proc export\|04 Proc step#1.2 proc export]]
 
 
 
