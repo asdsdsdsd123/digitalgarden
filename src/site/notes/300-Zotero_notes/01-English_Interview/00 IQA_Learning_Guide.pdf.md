@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-home":false,"aliases":null,"tags":["300-Zotero_notes/01-English_Interview"],"date":"2023/9/25","parent":"IQA_Learning_Guide.pdf","collections":["01 ESL"],"version":58,"libraryID":3,"itemKey":"25BFAERW","permalink":"/300-Zotero_notes/01-English_Interview/00 IQA_Learning_Guide.pdf/","dgPassFrontmatter":true}
+{"aliases":null,"tags":null,"dg-publish":true,"dg-home":null,"permalink":"/300-Zotero_notes/01-English_Interview/00 IQA_Learning_Guide.pdf/","dgPassFrontmatter":true}
 ---
 
  # IQA\_Learning\_Guide.pdf
@@ -10,7 +10,7 @@
 美 \['priːviəs]\
 adj. 以前的；先于；在 ... 之前\
 🔤
-
+a
 - <span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F4743804%2Fitems%2FV95R3T8H%22%2C%22annotationKey%22%3A%22DXFSRZPE%22%2C%22color%22%3A%22%232ea8e5%22%2C%22pageLabel%22%3A%2214%22%2C%22position%22%3A%7B%22pageIndex%22%3A13%2C%22rects%22%3A%5B%5B219.12%2C333.697%2C255.792%2C345.9%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F4743804%2Fitems%2FLLXYNJFP%22%5D%2C%22locator%22%3A%2214%22%7D%7D" ztype="zhighlight"><a href="zotero://open-pdf/groups/4743804/items/V95R3T8H?page=14&#x26;annotation=DXFSRZPE"><span style="background-color: #2ea8e580">“proven”</span></a></span> - <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F4743804%2Fitems%2FLLXYNJFP%22%5D%2C%22locator%22%3A%2214%22%7D%5D%2C%22properties%22%3A%7B%7D%7D" ztype="zcitation">(- <span class="citation-item"><a href="zotero://select/groups/4743804/items/LLXYNJFP">“IQA_Learning_Guide.pdf”, p. 14</a></span>)</span> 🔤英 \['pruːvn]\
 美 \['pruːvn]\
 adj. 证明的\
