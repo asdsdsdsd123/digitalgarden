@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-home":null,"aliases":null,"tags":["300-Zotero_notes/01-EngWords/01-English_Interview"],"permalink":"/300-Zotero_notes/01-EngWords/01-English_Interview/01 Sumarry_1/","dgPassFrontmatter":true}
+{"dg-publish":true,"dg-home":false,"aliases":null,"tags":["300-Zotero_notes/01-EngWords/01-English_Interview"],"permalink":"/300-Zotero_notes/01-EngWords/01-English_Interview/01 Sumarry_1/","dgPassFrontmatter":true}
 ---
 
 
