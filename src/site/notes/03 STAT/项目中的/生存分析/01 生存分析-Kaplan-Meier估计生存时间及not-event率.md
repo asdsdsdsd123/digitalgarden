@@ -1,11 +1,11 @@
 ---
-{"dg-publish":true,"dg-home":null,"permalink":"/03 STAT/项目中的/生存分析/01 生存分析-Kaplan-Meier估计生存时间及not-event率/","dgPassFrontmatter":true}
+{"cssclass":"code-wrap","dg-publish":true,"dg-home":null,"permalink":"/03 STAT/项目中的/生存分析/01 生存分析-Kaplan-Meier估计生存时间及not-event率/","dgPassFrontmatter":true}
 ---
 
 
 ## 1. 输出rtf 及编程注意事项
 
-![../../../Z appendix/Pasted image 20221209223943 2.png](/img/user/Z%20appendix/Pasted%20image%2020221209223943%202.png)
+![Pasted image 20221209223943 2](/img/user/Z appendix/Pasted image 20221209223943 2.png)
 
 ## 2. 中位时间，最大最小值
 
@@ -199,7 +199,7 @@ run;
 
 ### 3.2. 输出no-event的数据集，及扩展详解
 
-![../../../Z appendix/Pasted image 20221209225740.png](/img/user/Z%20appendix/Pasted%20image%2020221209225740.png)
+![Pasted image 20221209225740](/img/user/Z appendix/Pasted image 20221209225740.png)
 
 ````ad-note
 collapse: open
@@ -253,8 +253,8 @@ run;
 ````
 
 > [!note]+ dummy数据集及output如下图
-> - ![../../../Z appendix/Pasted image 20221209230600.png](/img/user/Z%20appendix/Pasted%20image%2020221209230600.png)
-> - ![../../../Z appendix/Pasted image 20221209230609.png](/img/user/Z%20appendix/Pasted%20image%2020221209230609.png)
+> - ![Pasted image 20221209230600](/img/user/Z appendix/Pasted image 20221209230600.png)
+> - ![Pasted image 20221209230609](/img/user/Z appendix/Pasted image 20221209230609.png)
 
 
 
