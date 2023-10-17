@@ -27,6 +27,8 @@ drawtext textattrs=(size=10 family="Times New Roman") "C"{sub 'max'} "细胞"   
 
 ### 2.2. unicode特殊字符及上下标
 
+**上下标：sub sup**
+
 #### 2.2.1. enrry
 
 - Entry textattrs=(style=italic) "E(Y)" 
@@ -41,7 +43,6 @@ drawtext textattrs=(size=10 family="Times New Roman") "C"{sub 'max'} "细胞"   
 
 > 注：对于unicode字符的，用的unicode编码值，需要写成`(*ESC*){unicode '00B2'x}`类似形式
 > 	而字母可以表示的，用的`{unicode beta}`
-
 
 #### 2.2.2. draw text
 
@@ -63,6 +64,55 @@ drawtext `'~{unicode "03c3"x}'`**{sub "1"}**/ x='Sigma1' y=-1 anchor=top xspace=
 
 drawtext '~{unicode "2264"x} 10'  /  x='LE10' y=-1 anchor=top xspace=datavalue yspace=wallpercent;
 
+#### 2.2.3. textplot
+
+textplot可以`输出有上下标的unicode`，如m<sup>2</sup>。无法输出如C<sub>max</sub>这种形式
+通过format加入unicode字符，再在textplot语句采用此format/或在proc sgrender中用此format
+
+```sas
+proc format;
+	value $txt
+	'm2=a2+b2'="m(*ESC*){unicode '00B2'x}=a(*ESC*){unicode '00B2'x}+b(*ESC*){unicode '00B2'x}";
+quit;
+data t;
+	length name $200;
+	x=50;y=50;name="m2=a2+b2";output;
+	x=70;y=70;name="m2+n2";output;
+run;
+
+ods escapechar="@";
+proc template;
+	define statgraph textplot;
+	begingraph;
+		entrytitle "Weight by Age and Sex" {sub 'max'};
+		entrytitle "Weight by Age and Sex" {sub 'max'};
+
+		layout overlay / yaxisopts=(offsetmin=0.05 offsetmax=0.05  linearopts=(viewmin=0 viewmax=100) label=" ");
+
+			drawtext textattrs=(size=10 family="Times New Roman") "C"{sub 'max'} "细胞"   "  (@{unicode '00B2'x})"
+				/ x=-3 y=50 anchor=bottom xspace=wallpercent yspace=wallpercent rotate=90 width=100 justify=center;
+
+			drawtext textattrs=(size=10 family="Times New Roman") "C"{sub 'max'} "细胞"   "  (@{unicode '00B2'x})"
+				/ x=-8 y=50 anchor=bottom xspace=wallpercent yspace=wallpercent rotate=90 width=100 justify=center;
+
+
+			textplot x=x y=y text=name /display=all textattrs=(weight=bold) fillattrs=(transparency=0.9) ;
+				/*也可在斜杠后加format=$text.，根据Guide是对该语句指定的text=xx后，xx变量的format，后面proc sgrender的format可以去掉，不过一般在proc sgrender里加，可对于所有变量进行format*/
+		endlayout;
+	endgraph;
+	end;
+run;
+
+ods listing close;
+ods rtf file="D:\Users\C02207\Desktop\1.rtf";
+	proc sgrender data=t template=textplot;
+		format name $txt.;
+	run;
+ods rtf close;
+ods listing;
+```
+
+![../../Z appendix/Pasted image 20231017162102.png](/img/user/Z%20appendix/Pasted%20image%2020231017162102.png)
 ## 3. 坐标轴
 
 https://www.jianshu.com/p/a3e90268c1ca
