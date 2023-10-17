@@ -2,10 +2,10 @@
 {"cssclass":"code-wrap","dg-publish":true,"dg-home":null,"permalink":"/03 STAT/项目中的/生存分析/01 生存分析-Kaplan-Meier估计生存时间及not-event率/","dgPassFrontmatter":true}
 ---
 
-
+[采用Kaplan-Meier方法得到各治疗组生存函数估计和中位PFS估计值。输出不同时间点（3、6、9、12个月等）的无进展生存率及其双侧95%CI](app://obsidian.md/01%20%E7%94%9F%E5%AD%98%E5%88%86%E6%9E%90-Kaplan-Meier%E4%BC%B0%E8%AE%A1%E7%94%9F%E5%AD%98%E6%97%B6%E9%97%B4%E5%8F%8Anot-event%E7%8E%87.md) [20生存分析-Kaplan-Meier估计生存时间及not-event率](app://obsidian.md/01%20%E7%94%9F%E5%AD%98%E5%88%86%E6%9E%90-Kaplan-Meier%E4%BC%B0%E8%AE%A1%E7%94%9F%E5%AD%98%E6%97%B6%E9%97%B4%E5%8F%8Anot-event%E7%8E%87)
 ## 1. 输出rtf 及编程注意事项
 
-![Pasted image 20221209223943 2](/img/user/Z appendix/Pasted image 20221209223943 2.png)
+![../../../Z appendix/Pasted image 20221209223943 2.png](/img/user/Z%20appendix/Pasted%20image%2020221209223943%202.png)
 
 ## 2. 中位时间，最大最小值
 
@@ -199,7 +199,7 @@ run;
 
 ### 3.2. 输出no-event的数据集，及扩展详解
 
-![Pasted image 20221209225740](/img/user/Z appendix/Pasted image 20221209225740.png)
+![../../../Z appendix/Pasted image 20221209225740.png](/img/user/Z%20appendix/Pasted%20image%2020221209225740.png)
 
 ````ad-note
 collapse: open
@@ -253,8 +253,8 @@ run;
 ````
 
 > [!note]+ dummy数据集及output如下图
-> - ![Pasted image 20221209230600](/img/user/Z appendix/Pasted image 20221209230600.png)
-> - ![Pasted image 20221209230609](/img/user/Z appendix/Pasted image 20221209230609.png)
+> - ![../../../Z appendix/Pasted image 20221209230600.png](/img/user/Z%20appendix/Pasted%20image%2020221209230600.png)
+> - ![../../../Z appendix/Pasted image 20221209230609.png](/img/user/Z%20appendix/Pasted%20image%2020221209230609.png)
 
 
 
