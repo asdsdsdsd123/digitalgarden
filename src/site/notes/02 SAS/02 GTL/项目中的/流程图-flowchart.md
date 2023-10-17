@@ -5,7 +5,7 @@
 
 # 1.输出结果
 
-![../../../Z appendix/Pasted image 20230101115406.png](/img/user/Z%20appendix/Pasted%20image%2020230101115406.png)
+![Pasted image 20230101115406](/img/user/Z appendix/Pasted image 20230101115406.png)
 
 每个框的文本用drawtext画，图框的位置，线条/箭头的位置自定义。
 
@@ -455,7 +455,7 @@ data all3;
 
 ```
 
- ![../../../Z appendix/Pasted image 20230101115619.png](/img/user/Z%20appendix/Pasted%20image%2020230101115619.png)
+ ![Pasted image 20230101115619](/img/user/Z appendix/Pasted image 20230101115619.png)
 
 ---
 
@@ -514,8 +514,8 @@ data all3;
 
 > - textplot和vectorplot，<mark style="background: #FFF3A3A6;">根据数据中的坐标点产生文字及箭头</mark>，基本选项不需要更改
 > 	- <mark style="background: #FFF3A3A6;">textplot</mark>：
-> 		- [[obsidian://booknote?type=annotation&book=100 PDF/SAS9.4 GTL.pdf&id=2493ec64-db20-af36-b436-15bcf79b1910&page=971&rect=148.997,249.676,507.560,286.320\|Use the TEXTPLOT statement, rather than the SCATTERPLOT statement with the MARKERCHARACTER= option, when you want more control over the appearance ofthe text]]
-> 		- [[obsidian://booknote?type=annotation&book=100 PDF/SAS9.4 GTL.pdf&id=49a55234-4705-af4a-f6e4-32463d1a74f3&page=999&rect=149.008,397.045,430.783,422.999\|Example: TEXTPLOT Statement]]
+> 		- [Use the TEXTPLOT statement, rather than the SCATTERPLOT statement with the MARKERCHARACTER= option, when you want more control over the appearance ofthe text](obsidian://booknote?type=annotation&book=100%20PDF/SAS9.4%20GTL.pdf&id=2493ec64-db20-af36-b436-15bcf79b1910&page=971&rect=148.997,249.676,507.560,286.320)
+> 		- [Example: TEXTPLOT Statement](obsidian://booknote?type=annotation&book=100%20PDF/SAS9.4%20GTL.pdf&id=49a55234-4705-af4a-f6e4-32463d1a74f3&page=999&rect=149.008,397.045,430.783,422.999)
 > 		- textplot x=x y=y text=name / name='m'   /*目前没啥用*/ 
 > 		        splitpolicy=split                                            /*根据给定的split拆分长文本*/
 > 		        splitchar='#'                                                   /*指定split字符*/
@@ -524,8 +524,8 @@ data all3;
 > 		        splitpolicy=splitalways
  >
 > 	- <mark style="background: #FFF3A3A6;">vectorplot</mark>:
-> 		- [[directed line segments-->有向线段).](obsidian://booknote?type=annotation&book=100 PDF/SAS9.4 GTL.pdf&id=3b105e13-4d73-1059-0bab-30d0b75eb4da&page=1000&rect=71.999,454.676,281.607,467.320\|VECTORPLOT creates a plot of vectors (directed line segments-->有向线段).]]
-> 		- [[obsidian://booknote?type=annotation&book=100 PDF/SAS9.4 GTL.pdf&id=6a63f581-99c0-6451-3b1b-0077ff71ba11&page=1017&rect=72,401.545,228.039,427.499\|Example Program]]
+> 		- [Creates a plot of vectors (directed line segments).](obsidian://booknote?type=annotation&book=100%20PDF/SAS9.4%20GTL.pdf&id=3b105e13-4d73-1059-0bab-30d0b75eb4da&page=1000&rect=71.999,454.676,281.607,467.320) **-->有方向**
+> 		- [Example Program](obsidian://booknote?type=annotation&book=100%20PDF/SAS9.4%20GTL.pdf&id=6a63f581-99c0-6451-3b1b-0077ff71ba11&page=1017&rect=72,401.545,228.039,427.499)
 > 		- vcenter=bbox                                                   /*文本是相对于文本包围框垂直居中*/ 
 > 	         position=center                                            /*和vcenter一起用*/ 
 > 	         display=(fill outline) 
@@ -536,8 +536,8 @@ data all3;
  > 
 > - drawline<mark style="background: #FFB86CA6;">画线段</mark>
 > 	- <mark style="background: #FFB86CA6;">drawline</mark>，
-> 		- [[obsidian://booknote?type=annotation&book=100 PDF/SAS9.4 GTL.pdf&id=75568ba0-bd7c-cfe5-0282-ee2c078cce7a&page=1416&rect=72.006,124.545,268.508,150.499\|DRAWLINE Statement]]
-> 		- [[obsidian://booknote?type=annotation&book=100 PDF/SAS9.4 GTL.pdf&id=e0311100-c9a4-a6cb-17dc-d50f5e20924e&page=1422&rect=72,85.545,228.039,111.499\|Example Program]]
+> 		- [DRAWLINE Statement](obsidian://booknote?type=annotation&book=100%20PDF/SAS9.4%20GTL.pdf&id=75568ba0-bd7c-cfe5-0282-ee2c078cce7a&page=1416&rect=72.006,124.545,268.508,150.499)
+> 		- [Example Program](obsidian://booknote?type=annotation&book=100%20PDF/SAS9.4%20GTL.pdf&id=e0311100-c9a4-a6cb-17dc-d50f5e20924e&page=1422&rect=72,85.545,228.039,111.499)
 > 		- drawline x1=40 y1=68 x2=40 y2=57 / xaxis=x yaxis=y drawspace=datavalue lineattrs=(pattern=solid thickness=1px color=black);
 
 
