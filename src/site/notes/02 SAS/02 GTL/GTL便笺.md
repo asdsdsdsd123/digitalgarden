@@ -22,18 +22,21 @@ Entry textattrs=(style=italic) "E(Y)"
 
 ### 2.2. draw text
 
-- [参考网站](https://blogs.sas.com/content/graphicallyspeaking/2013/01/28/unicode-tick-values-using-gtl/)
+- 可用于显示特殊字符（unicode）和上下标
+- drawtext textattrs=(size=10 family="Times New Roman") *"Regression Equation: Log"*`{sub "10"}`**"{Y} = a + b\*Log"**`{sub "10"}` "{X}" /anchor=topleft x=20 y=100 width=100;
+
+- [参考网站同理](https://blogs.sas.com/content/graphicallyspeaking/2013/01/28/unicode-tick-values-using-gtl/)
 ![../../Z appendix/Pasted image 20230119105706.png](/img/user/Z%20appendix/Pasted%20image%2020230119105706.png)
 
 barchart *x=cat y=Response*/ stat=mean dataskin=gloss; 
 
-drawtext *'~{unicode "03a3"x}'* / `x='SIGMA' y=-1` anchor=top `xspace=datavalue yspace=wallpercent`;
+drawtext *'~{unicode "03a3"x}'* / x='SIGMA' y=-1 anchor=top xspace=datavalue yspace=wallpercent;
 
 drawtext 'r' {sup "2"} /  x='RSquare' y=-1 anchor=top xspace=datavalue yspace=wallpercent;
 
-drawtext '~{unicode "03b1"x} + ~{unicode "03b2"x}' / x='Alpha+Beta' y=-1 anchor=top xspace=datavalue yspace=wallpercent;
+drawtext '~{unicode "03b1"x}'+ ~{unicode "03b2"x}' / x='Alpha+Beta' y=-1 anchor=top xspace=datavalue yspace=wallpercent;
 
-drawtext '~{unicode "03c3"x}' {sub "1"} / x='Sigma1' y=-1 anchor=top xspace=datavalue yspace=wallpercent;
+drawtext `'~{unicode "03c3"x}'`**{sub "1"}**/ x='Sigma1' y=-1 anchor=top xspace=datavalue yspace=wallpercent;
 
 drawtext '~{unicode "2264"x} 10'  /  x='LE10' y=-1 anchor=top xspace=datavalue yspace=wallpercent;
 
@@ -44,7 +47,7 @@ https://www.jianshu.com/p/a3e90268c1ca
 
 ### 3.1. 线性轴的范围设置
 
-- 需要先写xaxisopts=(  xaxisopts=(  )  )里
+- 需要先写xaxisopts=(  **linearopts=(  )**  )里
 - viewmin=1 viewmax=5 **tickvaluesequence=(start=1 end=5 increment=1)** `可不写viewmin/viewmax`
 - viewmin=0.1 viewmax=250 **tickvaluelist=(0 100 140 220)**  `可不写viewmin/viewmax`
 - **tickvaluelist=(0 100 140 220)** **tickdisplaylist=("基线" "第10周（治疗8周后）" "第14周（治疗12周后）" "第22周（治疗20周后）")**
@@ -58,6 +61,23 @@ tickvalueattrs=(size=8) labelattrs=(size=10)  label="时间")
 均值图和PK平均图类似，要求横坐标不等距-->用线性坐标，但需要显示文本txt
 
 ![../../Z appendix/Pasted image 20230125201310.png](/img/user/Z%20appendix/Pasted%20image%2020230125201310.png)  
+
+
+### 3.2. Drawtext定制坐标轴
+
+ *可自定义横制作纵坐标轴，尤其是带特殊字符，写在label里不生效的*
+
+- 定制横坐标
+	- drawtext textattrs=(size=10 family="Times New Roman") "CAR+" ***'~{unicode "03c3"x}***`{sup "2"}`
+		- textattrs=(size=10 family="宋体") "细胞数" 
+		- textattrs=(size=10 family="Times New Roman") " (/μL)"
+	- / `x=50 y=0` anchor=bottom xspace=`wallpercent` yspace=`wallpercent` `rotate=0` width=100 justify=center;
+
+- 定制纵坐标
+	- drawtext textattrs=(size=10 family="Times New Roman") "C"***{sub "max"}***
+		- textattrs=(size=10 family="宋体") "细胞数" 
+		- textattrs=(size=10 family="Times New Roman") ***"(@{unicode '00B2'x}"***
+	- / `x=-10.1 y=50` anchor=bottom xspace=`wallpercent` yspace=`wallpercent` `rotate=90` width=100 justify=center;
 
 ## 4. 定制图例显示---LLOQ
 
