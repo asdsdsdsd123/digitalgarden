@@ -9,18 +9,41 @@
 [官方GTL学习](https://support.sas.com/rnd/datavisualization/gtl)
 
 ## 2. unicode in GTL
+### 2.1. 换行
+- texpplot语句/后splitchar='#'选项，可指定换行 [[02 SAS/02 GTL/项目中的/流程图-flowchart#4.GTL画流程图\|参考流程图-flowchart]]
+- 可用多个entry/(drawtext?)，第二个entry/是换行效果
 
->  换行没找到，可用多个entry/(drawtext?)，第二个entry/是换行效果
+```sas
+entrytitle "Weight by Age and Sex" {sub 'max'};
+entrytitle "Weight by Age and Sex" {sub 'max'};
 
-### 2.1. enrry
-Entry textattrs=(style=italic) "E(Y)" 
-	`textattrs=()/*清除前面的斜体，后面的等号，清除格式*/` " = "
-       {unicode beta} {sub "0"} " + "
-       {unicode beta} {sub "1"} "x" {sub "1"}
-       " + " {unicode beta} {sub "2"} "x" {sub "2"}; 
-       ![../../Z appendix/Pasted image 20221216223553.png](/img/user/Z%20appendix/Pasted%20image%2020221216223553.png)
+drawtext textattrs=(size=10 family="Times New Roman") "C"{sub 'max'} "细胞"   "  (@{unicode '00B2'x})"
+/ x=-3 y=50 anchor=bottom xspace=wallpercent yspace=wallpercent rotate=90 width=100 justify=center;
 
-### 2.2. draw text
+drawtext textattrs=(size=10 family="Times New Roman") "C"{sub 'max'} "细胞"   "  (@{unicode '00B2'x})"
+/ x=-8 y=50 anchor=bottom xspace=wallpercent yspace=wallpercent rotate=90 width=100 justify=center;
+
+```
+
+### 2.2. unicode特殊字符及上下标
+
+#### 2.2.1. enrry
+
+- Entry textattrs=(style=italic) "E(Y)" 
+	- `textattrs=()`/\*清除前面的斜体，后面的等号，清除格式\*/
+		- " = "
+		- {unicode beta} {sub "0"} 
+		- " + "
+		- {unicode beta} {sub "1"} "x" {sub "1"}
+		- " + " 
+		- {unicode beta} {sub "2"} "x" {sub "2"};       
+	-  ![../../Z appendix/Pasted image 20221216223553.png](/img/user/Z%20appendix/Pasted%20image%2020221216223553.png)
+
+> 注：对于unicode字符的，用的unicode编码值，需要写成`(*ESC*){unicode '00B2'x}`类似形式
+> 	而字母可以表示的，用的`{unicode beta}`
+
+
+#### 2.2.2. draw text
 
 - 可用于显示特殊字符（unicode）和上下标
 - drawtext textattrs=(size=10 family="Times New Roman") *"Regression Equation: Log"*`{sub "10"}`**"{Y} = a + b\*Log"**`{sub "10"}` "{X}" /anchor=topleft x=20 y=100 width=100;
@@ -39,7 +62,6 @@ drawtext '~{unicode "03b1"x}'+ ~{unicode "03b2"x}' / x='Alpha+Beta' y=-1 anchor=
 drawtext `'~{unicode "03c3"x}'`**{sub "1"}**/ x='Sigma1' y=-1 anchor=top xspace=datavalue yspace=wallpercent;
 
 drawtext '~{unicode "2264"x} 10'  /  x='LE10' y=-1 anchor=top xspace=datavalue yspace=wallpercent;
-
 
 ## 3. 坐标轴
 
