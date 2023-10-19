@@ -124,7 +124,7 @@ data _nul1_;
 run;
 ```
 - `也可put多行`（3行，一条观测，Put外部数据三行-tricker/price/inductry）：
-![../../Z appendix/Pasted image 20221007183108.png](/img/user/Z%20appendix/Pasted%20image%2020221007183108.png)
+![../../Z appendix/Pasted image 20221007183108.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221007183108.png)
 - [[02 SAS/01 SAS基础知识点/03 sas statement#1 3 put，输出value到log\|03 sas statement#1 3 put，输出value到log]]
 
 ### 5.2. proc export
