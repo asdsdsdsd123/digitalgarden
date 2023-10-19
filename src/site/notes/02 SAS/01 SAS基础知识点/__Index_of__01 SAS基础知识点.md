@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-home":null,"permalink":"/02 SAS/01 SAS基础知识点/__Index_of__01 SAS基础知识点/","dgPassFrontmatter":true}
+{"dg-publish":true,"dg-home":null,"tags":["MOC"],"permalink":"/02 SAS/01 SAS基础知识点/__Index_of__01 SAS基础知识点/","dgPassFrontmatter":true}
 ---
 
 
