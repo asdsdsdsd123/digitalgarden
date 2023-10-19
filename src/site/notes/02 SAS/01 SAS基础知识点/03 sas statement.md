@@ -7,13 +7,13 @@
 
 >[!note] select
 >
->![../../Z appendix/Pasted image 20221013102743.png](/img/user/Z%20appendix/Pasted%20image%2020221013102743.png)  ![../../Z appendix/Pasted image 20221017231621.png](/img/user/Z%20appendix/Pasted%20image%2020221017231621.png)
+>![../../Z appendix/Pasted image 20221013102743.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221013102743.png)  ![../../Z appendix/Pasted image 20221017231621.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221017231621.png)
 
 ## 2. output
 
 > [!note] output后原来的值也会retain下来
 > 
-> ![../../Z appendix/Pasted image 20221013104934.png](/img/user/Z%20appendix/Pasted%20image%2020221013104934.png)
+> ![../../Z appendix/Pasted image 20221013104934.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221013104934.png)
 
 ## 3. put，输出value到log
 
@@ -56,19 +56,19 @@ run;
 > - `retain sum 0`; sum=sum+var; <--> sum+var;
 > 	- 0为给sum的初始值，每次sum的值在观测迭代中不初始化，该值保留
 > - `by var;` 后可使用`first.var/last.variable`
-> 	- ![../../Z appendix/Pasted image 20221013225112.png](/img/user/Z%20appendix/Pasted%20image%2020221013225112.png)
+> 	- ![../../Z appendix/Pasted image 20221013225112.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221013225112.png)
 
 ## 5. 与do循环语句一起用的语句
 
 > [!note] 与do循环语句一起用的语句,控制循环进程
 >> [!note] leave
->> ![../../Z appendix/Pasted image 20221013225823.png](/img/user/Z%20appendix/Pasted%20image%2020221013225823.png)
+>> ![../../Z appendix/Pasted image 20221013225823.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221013225823.png)
 > 
 >> [!note] continue
->> ![../../Z appendix/Pasted image 20221013225925.png](/img/user/Z%20appendix/Pasted%20image%2020221013225925.png)
+>> ![../../Z appendix/Pasted image 20221013225925.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221013225925.png)
 >
 >> [!note] goto
->> ![../../Z appendix/Pasted image 20221013230021.png](/img/user/Z%20appendix/Pasted%20image%2020221013230021.png)
+>> ![../../Z appendix/Pasted image 20221013230021.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221013230021.png)
 >
 
 ## 6. call系列语句
@@ -82,16 +82,16 @@ run;
 > [!note] array
 > - new(✳)，✳是数组的维度。
 >> [!note] 常用：将数据集中的变量放数组。新建一堆变量，放数组
->>  ![../../Z appendix/Pasted image 20221013231724.png](/img/user/Z%20appendix/Pasted%20image%2020221013231724.png)
+>>  ![../../Z appendix/Pasted image 20221013231724.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221013231724.png)
 > 
 >> [!note] 创建临时变量，Array num(2) \_temporary_ \(2 9)
 >> - 其中不可写为….. num(\*)….，因只存放临时变量，此时需要写清楚具体变量个数
 >> - 如下图示例中，没有把值加到变量中，也是创建的临时的数组。省了\temporary
->> 	- ![../../Z appendix/Pasted image 20221013232529.png](/img/user/Z%20appendix/Pasted%20image%2020221013232529.png)
+>> 	- ![../../Z appendix/Pasted image 20221013232529.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221013232529.png)
 >> - 写成\*报错
->> 	- ![../../Z appendix/Pasted image 20221013232644.png](/img/user/Z%20appendix/Pasted%20image%2020221013232644.png)
+>> 	- ![../../Z appendix/Pasted image 20221013232644.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221013232644.png)
 
 ## 8. attrib分配属性
 
 > [!attrib]
-> ![../../Z appendix/Pasted image 20221015112119.png](/img/user/Z%20appendix/Pasted%20image%2020221015112119.png)
+> ![../../Z appendix/Pasted image 20221015112119.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221015112119.png)
