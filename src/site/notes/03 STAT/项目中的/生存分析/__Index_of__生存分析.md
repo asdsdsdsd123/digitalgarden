@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-home":null,"permalink":"/03 STAT/项目中的/生存分析/__Index_of__生存分析/","dgPassFrontmatter":true}
+{"dg-publish":true,"dg-home":null,"tags":["MOC"],"permalink":"/03 STAT/项目中的/生存分析/__Index_of__生存分析/","dgPassFrontmatter":true}
 ---
 
 
