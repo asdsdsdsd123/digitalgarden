@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-home":null,"permalink":"/05 R&VBA&PS&PROJECT/VBA/__Index_of__VBA/","dgPassFrontmatter":true}
+{"dg-publish":true,"dg-home":null,"tags":["MOC"],"permalink":"/05 R&VBA&PS&PROJECT/VBA/__Index_of__VBA/","dgPassFrontmatter":true}
 ---
 
 
