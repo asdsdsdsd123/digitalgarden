@@ -5,7 +5,7 @@
 
 # 1. 输出结果
 
-![../../../Z appendix/Pasted image 20230101110742.png](/img/user/Z%20appendix/Pasted%20image%2020230101110742.png)
+![../../../Z appendix/Pasted image 20230101110742.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020230101110742.png)
 
 ---
 
@@ -136,7 +136,7 @@ run;
 
 ## 2. 输出的数据集：
 
-![../../../Z appendix/Pasted image 20230101113900.png](/img/user/Z%20appendix/Pasted%20image%2020230101113900.png)
+![../../../Z appendix/Pasted image 20230101113900.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020230101113900.png)
 
 ---
 
@@ -344,7 +344,7 @@ options mprint;
 > [!note]+ reference discreteattrmap&legenditem
 > - 注意这俩都需要写在最前，begingraph下的，不包含在任何LayOut中
 > - [[obsidian://booknote?type=annotation&book=100 PDF/SAS9.4 GTL.pdf&id=6101593e-7a91-049e-85de-1774f19961b6&page=1313&rect=72,187.795,228.039,213.749\|Example Program]]
-> - ![../../../Z appendix/Pasted image 20221219224212.png](/img/user/Z%20appendix/Pasted%20image%2020221219224212.png)
+> - ![../../../Z appendix/Pasted image 20221219224212.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221219224212.png)
 
 > [!note]+ 
 > - __用scatterplot展示图标点__
@@ -367,7 +367,7 @@ options mprint;
 > 	- discretelegend `"highlowplot"` / across=1 valueattrs=(size=8)  location=inside border=false halign=left valign=bottom;
 > - endlayout;
 > - ---------------------------------------------------------------------------------
-> - ![../../../Z appendix/Pasted image 20230101143306.png](/img/user/Z%20appendix/Pasted%20image%2020230101143306.png)
+> - ![../../../Z appendix/Pasted image 20230101143306.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020230101143306.png)
 
 
 
