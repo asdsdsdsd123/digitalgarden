@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-home":true,"tags":["MOC","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry"],"permalink":"/__Index_of__demo/","dgPassFrontmatter":true}
+{"dg-publish":true,"dg-home":true,"tags":["MOC","gardenEntry","gardenEntry","gardenEntry"],"permalink":"/__Index_of__demo/","dgPassFrontmatter":true}
 ---
 
 
@@ -305,7 +305,7 @@ $<div class="markdown-embed-title">
  [[04 CDISC & Domain/02 SDTM/03-11 PR\|03-11 PR]]
  [[04 CDISC & Domain/02 SDTM/03-12 RELREC\|03-12 RELREC]]
  [[04 CDISC & Domain/02 SDTM/03-13 SUPP\|03-13 SUPP]]
- [[04 CDISC & Domain/02 SDTM/03-14 TS\|03-14 TS]]
+ [[04 CDISC & Domain/02 SDTM/03-14 Trial Design\|03-14 Trial Design]]
  [[04 CDISC & Domain/02 SDTM/03-15 VS\|03-15 VS]]
  [[04 CDISC & Domain/02 SDTM/SDTM变量类型.excalidraw\|SDTM变量类型.excalidraw]]
 
@@ -466,7 +466,6 @@ $<div class="markdown-embed-title">
 
 
 
- [[06 PD/__Index_of__06 PD\|__Index__of_06 PD]]
  [[06 PD/01 时间窗\|01 时间窗]]
  [[06 PD/01 时间窗的宏\|01 时间窗的宏]]
  [[06 PD/02 PK超窗(带时间点。要写超窗几分钟)\|02 PK超窗(带时间点。要写超窗几分钟)]]
