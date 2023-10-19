@@ -5,7 +5,7 @@
 
 `有编程注意事项：95%CI分析不包括NA。两部分应该统一算法，结果一致`
 
-![../../../Z appendix/Pasted image 20221207180148.png](/img/user/Z%20appendix/Pasted%20image%2020221207180148.png)
+![../../../Z appendix/Pasted image 20221207180148.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221207180148.png)
 
 ## 1. sas代码
 
