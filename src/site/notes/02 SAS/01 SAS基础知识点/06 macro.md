@@ -7,7 +7,7 @@
 
 - %put \_automatic_，输出自动宏变量
 > [!sas中的自动宏变量]
-> ![../../Z appendix/Pasted image 20221016105621.png](/img/user/Z%20appendix/Pasted%20image%2020221016105621.png)
+> ![../../Z appendix/Pasted image 20221016105621.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221016105621.png)
 
 > [!sql select 语句运行后，产生sqlobs宏变量]
 > - sql select执行后产生sqlobs宏变量
@@ -33,7 +33,7 @@
 > 
 >> [!通过一个data 步，创建多个宏变量]
 >> 
->> ![../../Z appendix/Pasted image 20221016112010.png](/img/user/Z%20appendix/Pasted%20image%2020221016112010.png)
+>> ![../../Z appendix/Pasted image 20221016112010.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221016112010.png)
 >
 > - 默认，在data步执行完才会产生宏变量，即不能在该data 步，使用该data步产生的宏变量。若`在该data步使用同data步创建的宏变量：
 > 	- Symget('没有&')
@@ -42,9 +42,9 @@
 >> [!在同一data步使用该data步产生的宏变量]
 >> 
 >> - 两种方法：
->> 	 - ![../../Z appendix/Pasted image 20221016112847.png](/img/user/Z%20appendix/Pasted%20image%2020221016112847.png)  ![../../Z appendix/Pasted image 20221016112907.png](/img/user/Z%20appendix/Pasted%20image%2020221016112907.png)  ![../../Z appendix/Pasted image 20221016113114.png](/img/user/Z%20appendix/Pasted%20image%2020221016113114.png)
+>> 	 - ![../../Z appendix/Pasted image 20221016112847.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221016112847.png)  ![../../Z appendix/Pasted image 20221016112907.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221016112907.png)  ![../../Z appendix/Pasted image 20221016113114.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221016113114.png)
 >>  - 项目中的使用：
->> 	 - ![../../Z appendix/Pasted image 20221016113229.png](/img/user/Z%20appendix/Pasted%20image%2020221016113229.png)
+>> 	 - ![../../Z appendix/Pasted image 20221016113229.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221016113229.png)
 
 > [!proc sql步创建宏变量]
 >
@@ -63,7 +63,7 @@
 > 	
 >> [!图中如上知识点]
 >> 
->> ![../../Z appendix/Pasted image 20221016120047.png](/img/user/Z%20appendix/Pasted%20image%2020221016120047.png)
+>> ![../../Z appendix/Pasted image 20221016120047.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221016120047.png)
 > 
 >> [!项目中sas代码]
 >> ```sas 
@@ -96,7 +96,7 @@
 - %cmpress
 
 > [!示例如图]
-> ![../../Z appendix/Pasted image 20221016121026.png](/img/user/Z%20appendix/Pasted%20image%2020221016121026.png)
+> ![../../Z appendix/Pasted image 20221016121026.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221016121026.png)
 
 ## 4. 宏的option
 
@@ -104,14 +104,14 @@
 > 在%macro指定的option权限高于option语句指定的 #注意事项/属性范围 
 >> [!可在%macro中写的option,%macro name/option]
 >>
->> ![../../Z appendix/Pasted image 20221016122455.png](/img/user/Z%20appendix/Pasted%20image%2020221016122455.png)
+>> ![../../Z appendix/Pasted image 20221016122455.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221016122455.png)
 >
 >> [!在option语句指定宏相关的option]
 >> - 与宏存储相关的
->> 	- ![../../Z appendix/Pasted image 20221016122726.png](/img/user/Z%20appendix/Pasted%20image%2020221016122726.png)
+>> 	- ![../../Z appendix/Pasted image 20221016122726.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221016122726.png)
 >>
 >> - minoperator，产生in的作用
->> 	- ![../../Z appendix/Pasted image 20221016123136.png](/img/user/Z%20appendix/Pasted%20image%2020221016123136.png)
+>> 	- ![../../Z appendix/Pasted image 20221016123136.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221016123136.png)
 >>
 >>> [!in operator的sas code]
 >>> ```sas code
@@ -133,7 +133,7 @@
 ## 5. 宏的存储及调用
 
 > [!写宏的时候，可以指定加密宏程序]
-> ![../../Z appendix/Pasted image 20221016154506.png](/img/user/Z%20appendix/Pasted%20image%2020221016154506.png)
+> ![../../Z appendix/Pasted image 20221016154506.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221016154506.png)
 > 
 
 ### 5.1. %incluse读入宏程序
@@ -143,7 +143,7 @@
 > - %inc "&\_rootpath.\macros\get_rtf_outname.sas";
 > 	- *之前的宏程序保存放到指定路径（macros），保存的程序名字与宏名字（get_rtf_outname）保持一致, %inc读入宏程序，就可以用了%get_rtf_outname。*;
 > 
-> - ![../../Z appendix/Pasted image 20221016184825.png](/img/user/Z%20appendix/Pasted%20image%2020221016184825.png)
+> - ![../../Z appendix/Pasted image 20221016184825.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221016184825.png)
 > 	- 上图中.\表示路径的相对引用，是同sas程序的文件夹位置
 > 
 
@@ -154,10 +154,10 @@
 
 > [!Autocall macro facility使用]
 > - 定义后存储宏（保存.sas程序）：
-> 	- ![../../Z appendix/Pasted image 20221016153041.png](/img/user/Z%20appendix/Pasted%20image%2020221016153041.png)
+> 	- ![../../Z appendix/Pasted image 20221016153041.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221016153041.png)
 > 
 > - 调用宏
-> 	- ![../../Z appendix/Pasted image 20221016153122.png](/img/user/Z%20appendix/Pasted%20image%2020221016153122.png)  ![../../Z appendix/Pasted image 20221016153241.png](/img/user/Z%20appendix/Pasted%20image%2020221016153241.png)
+> 	- ![../../Z appendix/Pasted image 20221016153122.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221016153122.png)  ![../../Z appendix/Pasted image 20221016153241.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221016153241.png)
 > 
 
 ### 5.3. Stored compiled macro facility
@@ -168,17 +168,17 @@
 
 > [! Stored compiled macro facility使用]
 > - 定义后存储宏：
-> 	- ![../../Z appendix/Pasted image 20221016152127.png](/img/user/Z%20appendix/Pasted%20image%2020221016152127.png)
+> 	- ![../../Z appendix/Pasted image 20221016152127.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221016152127.png)
 > 
 > - 调用宏
-> 	- ![../../Z appendix/Pasted image 20221016152148.png](/img/user/Z%20appendix/Pasted%20image%2020221016152148.png)
+> 	- ![../../Z appendix/Pasted image 20221016152148.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221016152148.png)
 
 ### 5.4. 多个&的解析
 
 > [!多个&&的解析]
 > 
 > &&会解析为一个&，由左到右依次解析
-> ![../../Z appendix/Pasted image 20221016163246.png](/img/user/Z%20appendix/Pasted%20image%2020221016163246.png)
+> ![../../Z appendix/Pasted image 20221016163246.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221016163246.png)
 
 ## 6. 宏函数
 
@@ -187,7 +187,7 @@
 > [!%symexist 判断指定宏变量是否存在]
 > - %symexist (macro-variable-name) -->若宏变量存在返回1，否则返回0
 > 	- 用法：
-> 		- ![../../Z appendix/Pasted image 20221016160947.png](/img/user/Z%20appendix/Pasted%20image%2020221016160947.png)
+> 		- ![../../Z appendix/Pasted image 20221016160947.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221016160947.png)
 
 ### 6.2. 常用宏函数
 
@@ -195,14 +195,14 @@
 > - 使宏的文本，可以进行数值运算，而非仅显示文本
 > 	- %eval，计算的带小数点的，只会保留整数部分
 > 	- %sysevalf，计算的带小数点的，也会有小数部分
-> 		- ![../../Z appendix/Pasted image 20221016161808.png](/img/user/Z%20appendix/Pasted%20image%2020221016161808.png)
+> 		- ![../../Z appendix/Pasted image 20221016161808.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221016161808.png)
 
 > [!%sysfunc可对宏变量使用date步函数。或直接使用宏函数]
 > - 用法：%sysfunc(sas-data step-function)
 > 	- 如：%sysfunc(substr(mvar,2,5))
 > - 有的宏函数如%substr/%scan/%compress等可以直接用
 > - 宏函数与SAS函数应用不同
-> 	- ![../../Z appendix/Pasted image 20221016162655.png](/img/user/Z%20appendix/Pasted%20image%2020221016162655.png)
+> 	- ![../../Z appendix/Pasted image 20221016162655.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221016162655.png)
 > 	
 > 	- 正常sas函数里，参数带引号的，用宏里面要把引号去掉
 > 		- %if %sysfunc(compress(&out,,kd))= %then %do
@@ -226,21 +226,21 @@
 > 	
 >> [!两种mask区别示例及应用]
 >> 
->> ![../../Z appendix/Pasted image 20221016164953.png](/img/user/Z%20appendix/Pasted%20image%2020221016164953.png)  ![../../Z appendix/Pasted image 20221016165840.png](/img/user/Z%20appendix/Pasted%20image%2020221016165840.png) 	
+>> ![../../Z appendix/Pasted image 20221016164953.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221016164953.png)  ![../../Z appendix/Pasted image 20221016165840.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221016165840.png) 	
 >
 
 > [!%qsubstr或%qscan等q开头的宏函数]
 > - 在%substr或%scan中，mask不起作用，即使使用mask函数
 > 	- `%qsubstr，对结果mask`（此时`mask了特殊字符`，只作为字符而没有特殊功能），`再substr`
-> 	- ![../../Z appendix/Pasted image 20221016165709.png](/img/user/Z%20appendix/Pasted%20image%2020221016165709.png)  ![../../Z appendix/Pasted image 20221016165720.png](/img/user/Z%20appendix/Pasted%20image%2020221016165720.png)
+> 	- ![../../Z appendix/Pasted image 20221016165709.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221016165709.png)  ![../../Z appendix/Pasted image 20221016165720.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221016165720.png)
 
 > [!superq执行时mask，若结果有&，也只解一次]
-> ![../../Z appendix/Pasted image 20221016171714.png](/img/user/Z%20appendix/Pasted%20image%2020221016171714.png)  ![../../Z appendix/Pasted image 20221016171848.png](/img/user/Z%20appendix/Pasted%20image%2020221016171848.png)
+> ![../../Z appendix/Pasted image 20221016171714.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221016171714.png)  ![../../Z appendix/Pasted image 20221016171848.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221016171848.png)
 
 > [!unmask函数：%unquote()，unmask所有内容]
 > - During macro execution, `unmasks all special characters and mnemonic operators` for a value
 > 	- 一般在宏里这么写：
-> 		- ![../../Z appendix/Pasted image 20221016172518.png](/img/user/Z%20appendix/Pasted%20image%2020221016172518.png)
+> 		- ![../../Z appendix/Pasted image 20221016172518.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221016172518.png)
 > 
 
 ## 7. 宏的scope
@@ -250,20 +250,20 @@
 	- 局部宏变量（可用%local mvar 定义）只在该宏内生效
 
 > [!简单介绍]
-> ![../../Z appendix/Pasted image 20221016173848.png](/img/user/Z%20appendix/Pasted%20image%2020221016173848.png)
+> ![../../Z appendix/Pasted image 20221016173848.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221016173848.png)
 
 ### 7.1. 宏参数的scope
 - `%macro xxx（test）中的宏参数`，`自动创建为局部宏变量`（相当%local test），`在xx宏里%let再赋值test，改的值也是local test的值`。
 
 > [!示例如图]
-> ![../../Z appendix/Pasted image 20221016174355.png](/img/user/Z%20appendix/Pasted%20image%2020221016174355.png)
+> ![../../Z appendix/Pasted image 20221016174355.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221016174355.png)
 > 
 
 ### 7.2. 同名宏变量，未定义scope
 - 对于`同名称宏变量`，若也`没有用%local %global定义scope`，其`scope由最开始定义`，其`值在最后决定（一层层值覆盖）`
 
 > [!示例如图]
-> ![../../Z appendix/Pasted image 20221016175503.png](/img/user/Z%20appendix/Pasted%20image%2020221016175503.png)   ![../../Z appendix/Pasted image 20221016175513.png](/img/user/Z%20appendix/Pasted%20image%2020221016175513.png)
+> ![../../Z appendix/Pasted image 20221016175503.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221016175503.png)   ![../../Z appendix/Pasted image 20221016175513.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221016175513.png)
 
 ### 7.3. call symput产生宏变量的特殊情况
 
@@ -272,8 +272,8 @@
 	- 同前规则，1.7.2，同名的属性由开始定义，值由后面定义（图3）
 
 > [!相关图片知识点如下]
-> - ![../../Z appendix/Pasted image 20221016180007.png](/img/user/Z%20appendix/Pasted%20image%2020221016180007.png)  ![../../Z appendix/Pasted image 20221016180015.png](/img/user/Z%20appendix/Pasted%20image%2020221016180015.png)  
-> - ![../../Z appendix/Pasted image 20221016180023.png](/img/user/Z%20appendix/Pasted%20image%2020221016180023.png)  ![../../Z appendix/Pasted image 20221016180031.png](/img/user/Z%20appendix/Pasted%20image%2020221016180031.png)
+> - ![../../Z appendix/Pasted image 20221016180007.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221016180007.png)  ![../../Z appendix/Pasted image 20221016180015.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221016180015.png)  
+> - ![../../Z appendix/Pasted image 20221016180023.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221016180023.png)  ![../../Z appendix/Pasted image 20221016180031.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221016180031.png)
 
 ## 8. 宏程序返回0 1
 
@@ -282,22 +282,22 @@
 > [! 判断某数据集中是否有某个变量]
 > - 通过SAS函数varnum，open/close，判断该数据集在不在
 > - 程序如图：
-> 	- ![../../Z appendix/Pasted image 20221016181434.png](/img/user/Z%20appendix/Pasted%20image%2020221016181434.png)
+> 	- ![../../Z appendix/Pasted image 20221016181434.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221016181434.png)
 
 ### 8.2. 判断数据集是否存在
 
 > [!判断数据集是否存在]
 > - 程序
-> 	- ![../../Z appendix/Pasted image 20221016181643.png](/img/user/Z%20appendix/Pasted%20image%2020221016181643.png)
+> 	- ![../../Z appendix/Pasted image 20221016181643.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221016181643.png)
 > - 同理也可用上边的open close函数，判断数据集存不存在
 
 ## 9. 自己研究的宏
 
 > [!自动获取路径]
-> ![../../Z appendix/Pasted image 20221016225813.png](/img/user/Z%20appendix/Pasted%20image%2020221016225813.png)
+> ![../../Z appendix/Pasted image 20221016225813.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221016225813.png)
 
 > [!计算小数位数]
 > - 对于ADSL类数据集中，计算其中所有数值变量的最大小数位数。（如WEIGHT,HEIGHT,AGE等变量）
 > - 对于BDS类数据集中，paramcd存放不同检查项，aval存放对应检查项的数值，计算每个paramcd检查项对应的最大小数位数
-> - ![../../Z appendix/Pasted image 20221016225932.png](/img/user/Z%20appendix/Pasted%20image%2020221016225932.png)
+> - ![../../Z appendix/Pasted image 20221016225932.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221016225932.png)
 
