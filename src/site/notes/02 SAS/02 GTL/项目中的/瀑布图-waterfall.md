@@ -5,8 +5,8 @@
 
 # 1. 输出结果
 
- ![../../../Z appendix/Pasted image 20230117085608.png](/img/user/Z%20appendix/Pasted%20image%2020230117085608.png)
- ![../../../Z appendix/Pasted image 20230117085508.png](/img/user/Z%20appendix/Pasted%20image%2020230117085508.png)
+ ![../../../Z appendix/Pasted image 20230117085608.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020230117085608.png)
+ ![../../../Z appendix/Pasted image 20230117085508.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020230117085508.png)
 
 ---
 
@@ -118,7 +118,7 @@ run;
 
 ## 2. 输出的数据集：
 
-![../../../Z appendix/Pasted image 20230117091224.png](/img/user/Z%20appendix/Pasted%20image%2020230117091224.png)
+![../../../Z appendix/Pasted image 20230117091224.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020230117091224.png)
 
 ---
 
