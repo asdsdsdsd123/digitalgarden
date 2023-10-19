@@ -53,7 +53,7 @@
 > 		- ACT/360：意思为一个月按照实际情况计算/一年按照360天计算
 > 		- ACT/ACT：意思为一个月按照实际情况计算/一年按照实际情况计算
 > 	
-> 	- ![../../Z appendix/Pasted image 20221013103955.png](/img/user/Z%20appendix/Pasted%20image%2020221013103955.png)
+> 	- ![../../Z appendix/Pasted image 20221013103955.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221013103955.png)
 > 
 
 > [!note] intck，返回两个日期间隔多少个年月日/星期（interval）
@@ -83,18 +83,18 @@
 > - ifn返回值是数值型，ifc返回值是字符型
 > - 规则类似，ifn，判断state是否为"PA"，若为"PA"则raten=7.25，若不为PA则新变量raten=5.25
 > 
-> ![../../Z appendix/Pasted image 20221013103138.png](/img/user/Z%20appendix/Pasted%20image%2020221013103138.png)
+> ![../../Z appendix/Pasted image 20221013103138.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221013103138.png)
 
 ### 3.2. lag/dif函数
 
 > [!note] lag/dif函数
 > - lag(arg)，返回上一次lag函数执行时的arg值。
 > - dif(arg)=当前arg值-lag(arg)值
-> - ![../../Z appendix/Pasted image 20221013223303.png](/img/user/Z%20appendix/Pasted%20image%2020221013223303.png)
+> - ![../../Z appendix/Pasted image 20221013223303.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221013223303.png)
 > - 注意事项：
 > 	- `返回上一次lag函数执行时的arg（在前边有值即可，非必须前一个观测的）`
 > 	- 由下可得，`最好用的时候不要写在if判断句内`
-> 	- ![../../Z appendix/Pasted image 20221013223812.png](/img/user/Z%20appendix/Pasted%20image%2020221013223812.png)
+> 	- ![../../Z appendix/Pasted image 20221013223812.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221013223812.png)
 > 	- 上图中，因为只用当X>2时才会调用LAG，所以第一次调用LAG时，X=3；当X=5时，第二次调用LAG，此时LAG(5)=3
 
 
