@@ -39,7 +39,7 @@ drawtext textattrs=(size=10 family="Times New Roman") "C"{sub 'max'} "细胞"   
 		- {unicode beta} {sub "1"} "x" {sub "1"}
 		- " + " 
 		- {unicode beta} {sub "2"} "x" {sub "2"};       
-	-  ![../../Z appendix/Pasted image 20221216223553.png](/img/user/Z%20appendix/Pasted%20image%2020221216223553.png)
+	-  ![../../Z appendix/Pasted image 20221216223553.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221216223553.png)
 
 > 注：对于unicode字符的，用的unicode编码值，需要写成`(*ESC*){unicode '00B2'x}`类似形式
 > 	而字母可以表示的，用的`{unicode beta}`
@@ -50,7 +50,7 @@ drawtext textattrs=(size=10 family="Times New Roman") "C"{sub 'max'} "细胞"   
 - drawtext textattrs=(size=10 family="Times New Roman") *"Regression Equation: Log"*`{sub "10"}`**"{Y} = a + b\*Log"**`{sub "10"}` "{X}" /anchor=topleft x=20 y=100 width=100;
 
 - [参考网站同理](https://blogs.sas.com/content/graphicallyspeaking/2013/01/28/unicode-tick-values-using-gtl/)
-![../../Z appendix/Pasted image 20230119105706.png](/img/user/Z%20appendix/Pasted%20image%2020230119105706.png)
+![../../Z appendix/Pasted image 20230119105706.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020230119105706.png)
 
 barchart *x=cat y=Response*/ stat=mean dataskin=gloss; 
 
@@ -112,7 +112,7 @@ ods rtf close;
 ods listing;
 ```
 
-![../../Z appendix/Pasted image 20231017162102.png](/img/user/Z%20appendix/Pasted%20image%2020231017162102.png)
+![../../Z appendix/Pasted image 20231017162102.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020231017162102.png)
 ## 3. 坐标轴
 
 https://www.jianshu.com/p/a3e90268c1ca
@@ -132,7 +132,7 @@ tickvalueattrs=(size=8) labelattrs=(size=10)  label="时间")
 
 均值图和PK平均图类似，要求横坐标不等距-->用线性坐标，但需要显示文本txt
 
-![../../Z appendix/Pasted image 20230125201310.png](/img/user/Z%20appendix/Pasted%20image%2020230125201310.png)  
+![../../Z appendix/Pasted image 20230125201310.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020230125201310.png)  
 
 
 ### 3.2. Drawtext定制坐标轴
@@ -154,7 +154,7 @@ tickvalueattrs=(size=8) labelattrs=(size=10)  label="时间")
 ## 4. 定制图例显示---LLOQ
 
 - 通过legenditem & layout lattice & layout gridded & mergelegend 定制图例：
-	- ![../../Z appendix/Pasted image 20230522170603.png](/img/user/Z%20appendix/Pasted%20image%2020230522170603.png)
+	- ![../../Z appendix/Pasted image 20230522170603.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020230522170603.png)
 
 ````ad-note
 collapse: false
@@ -277,4 +277,4 @@ layout lattice/***rows=2 columns=1 columndatarange=union rowweights=(0.95 0.05 )
 > 	- 书中参考：[[obsidian://booknote?type=annotation&book=100 PDF/SAS9.4 GTL User-Guide 简版.pdf&id=98c4cdf9-f8e0-6038-022e-4181010bb2c7&page=586&rect=239.277,164.926,502.849,201.570\|IMAGE_DPI=numberSpecifies the image resolution indots per inch for output images.IMAGE_DPI=200 is the default.]]
 
 > - rtf转成pdf，可能会引起dpi下降，可这样处理
-> 	- ![../../Z appendix/Pasted image 20230522175011.png](/img/user/Z%20appendix/Pasted%20image%2020230522175011.png)
+> 	- ![../../Z appendix/Pasted image 20230522175011.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020230522175011.png)
