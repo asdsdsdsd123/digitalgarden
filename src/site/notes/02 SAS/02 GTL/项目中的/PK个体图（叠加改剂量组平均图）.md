@@ -7,7 +7,7 @@
 
 一般平均值用的ATPT，个体图用ARELTM（实际偏差时间）
 
-![../../../Z appendix/Pasted image 20230125211123.png](/img/user/Z%20appendix/Pasted%20image%2020230125211123.png)
+![../../../Z appendix/Pasted image 20230125211123.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020230125211123.png)
 
 ---
 
@@ -76,7 +76,7 @@ run;
 
 ## 2. 输出的数据集：
 
-![../../../Z appendix/Pasted image 20230125211635.png](/img/user/Z%20appendix/Pasted%20image%2020230125211635.png)
+![../../../Z appendix/Pasted image 20230125211635.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020230125211635.png)
 
 ---
 
@@ -225,10 +225,10 @@ title: 3.mergelegend与discretelegend
 ` mergelegend，两种图例组合到一起，否则discretelegend只显示一种的`
 
 ***mergedlegend*** "a" "b"/location=inside halign=right valign=top across=1;
- ![Pasted image 20230125212437.png](/img/user/Z%20appendix/Pasted%20image%2020230125212437.png)
+ ![Pasted image 20230125212437.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020230125212437.png)
  
  ***discretelegend*** "a" "b"/location=inside halign=right valign=top across=1;
-![Pasted image 20230125212635.png](/img/user/Z%20appendix/Pasted%20image%2020230125212635.png)
+![Pasted image 20230125212635.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020230125212635.png)
 
 ```
 
