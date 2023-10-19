@@ -5,9 +5,9 @@
 
 # 1. 输出结果
 
-![../../../Z appendix/Pasted image 20221217121041.png](/img/user/Z%20appendix/Pasted%20image%2020221217121041.png)
+![../../../Z appendix/Pasted image 20221217121041.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221217121041.png)
 
-![../../../Z appendix/Pasted image 20221217121147.png](/img/user/Z%20appendix/Pasted%20image%2020221217121147.png)
+![../../../Z appendix/Pasted image 20221217121147.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221217121147.png)
 
 ---
 
@@ -461,7 +461,7 @@ run;
 # 3. 绘图
 
 数据集内容如下：
-![../../../Z appendix/Pasted image 20221217120955.png](/img/user/Z%20appendix/Pasted%20image%2020221217120955.png)
+![../../../Z appendix/Pasted image 20221217120955.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221217120955.png)
 
 
 ## 1. 绘图的sas代码-HR的森林图为例
