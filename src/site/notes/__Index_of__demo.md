@@ -243,6 +243,7 @@ $<div class="markdown-embed-title">
 </div></div>
 
  [[03 STAT/统计知识.canvas|统计知识.canvas]]
+ [[03 STAT/Telix SAP\|Telix SAP]]
 
 
 
@@ -482,7 +483,6 @@ $<div class="markdown-embed-title">
  [[100 PDF/__Index_of__100 PDF\|__Index_of__100 PDF]]
  [[200 英语学习/__Index_of__200 英语学习\|__Index_of__200 英语学习]]
  [[300 Zotero notes/__Index_of__300 Zotero notes\|__Index_of__300 Zotero notes]]
- [[我的Zeotero库/__Index_of__我的Zeotero库\|__Index_of__我的Zeotero库]]
  [[A Excalidraw/__Index_of__A Excalidraw\|__Index_of__A Excalidraw]]
  [[Excalidraw/__Index_of__Excalidraw\|__Index_of__Excalidraw]]
  [[PDF注释/__Index_of__PDF注释\|__Index_of__PDF注释]]
