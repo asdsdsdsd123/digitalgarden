@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-home":null,"permalink":"/02 SAS/02 GTL/__Index_of__02 GTL/","dgPassFrontmatter":true}
+{"dg-publish":true,"dg-home":null,"tags":["MOC"],"permalink":"/02 SAS/02 GTL/__Index_of__02 GTL/","dgPassFrontmatter":true}
 ---
 
 
