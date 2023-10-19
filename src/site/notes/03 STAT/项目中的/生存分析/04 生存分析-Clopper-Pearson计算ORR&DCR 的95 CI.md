@@ -7,7 +7,7 @@
 
 `有编程注意事项：95%CI分析不包括NA`
 
-![../../../Z appendix/Pasted image 20221207180148 1.png](/img/user/Z%20appendix/Pasted%20image%2020221207180148%201.png)
+![../../../Z appendix/Pasted image 20221207180148 1.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221207180148%201.png)
 
 ## 2. sas代码
 
