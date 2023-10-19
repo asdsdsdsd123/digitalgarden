@@ -14,7 +14,7 @@
 > 	- `orientation=landscape`;
 > 	- ---
 > 	- 其他选项解释，见下图：
-> 		- ![../../Z appendix/Pasted image 20221015153639.png](/img/user/Z%20appendix/Pasted%20image%2020221015153639.png)
+> 		- ![../../Z appendix/Pasted image 20221015153639.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221015153639.png)
 
 ## 2. ods 语句
 
@@ -30,16 +30,16 @@
 
 > [!示例用法]
 > - 除了放title类似文本中，也放到数值中，output rtf时，会自动escapechar
-> 	- ![../../Z appendix/Pasted image 20221015183843.png](/img/user/Z%20appendix/Pasted%20image%2020221015183843.png)  
-> 	- ![../../Z appendix/Pasted image 20221015184313.png](/img/user/Z%20appendix/Pasted%20image%2020221015184313.png)
-> 	- ![../../Z appendix/Pasted image 20221126230147.png](/img/user/Z%20appendix/Pasted%20image%2020221126230147.png)
+> 	- ![../../Z appendix/Pasted image 20221015183843.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221015183843.png)  
+> 	- ![../../Z appendix/Pasted image 20221015184313.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221015184313.png)
+> 	- ![../../Z appendix/Pasted image 20221126230147.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221126230147.png)
 
 ### 2.2. ods select all/none
 
 - 结果输出、不输出html/listing 
 
 > [!select all/none]
-> ![../../Z appendix/Pasted image 20221015223109.png](/img/user/Z%20appendix/Pasted%20image%2020221015223109.png) 
+> ![../../Z appendix/Pasted image 20221015223109.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221015223109.png) 
 
 ### 2.3.  ods trace on/off+ods output
 
@@ -50,7 +50,7 @@
 	- ods output  `log-dataset-name`=`user-defined-dataset-name`;
 
 > [!ods trace on/off及ods output示例如图]
-> ![../../Z appendix/Pasted image 20221015224107.png](/img/user/Z%20appendix/Pasted%20image%2020221015224107.png)   ![../../Z appendix/Pasted image 20221015224201.png](/img/user/Z%20appendix/Pasted%20image%2020221015224201.png)
+> ![../../Z appendix/Pasted image 20221015224107.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221015224107.png)   ![../../Z appendix/Pasted image 20221015224201.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221015224201.png)
 
 - (3) 也可通过统计的过程步中的output语句，输出统计量到数据集 #注意事项/输出统计量 
 
@@ -65,8 +65,8 @@
 > [!输出几何统计量]
 > 
 > -  #注意事项/输出几何统计量
-> - ![../../Z appendix/Pasted image 20221016222908.png](/img/user/Z%20appendix/Pasted%20image%2020221016222908.png)  
-> - ![../../Z appendix/Pasted image 20221016222918.png](/img/user/Z%20appendix/Pasted%20image%2020221016222918.png) 
+> - ![../../Z appendix/Pasted image 20221016222908.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221016222908.png)  
+> - ![../../Z appendix/Pasted image 20221016222918.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221016222918.png) 
 > 
 > 
 >> [!sas代码]
@@ -113,32 +113,32 @@ $$\text{exp}\left(\frac{1}{n}\sum_{i=1}^{n}\ln(x_i)\right)=\sqrt[n]{\prod_{i=1}^
 	- bodytitle, 默认情况下title与footnote在页眉页脚上，`bodytitle加入后出现在表头表尾位置`
 
 > [!示例如图]
-> ![../../Z appendix/Pasted image 20221015224923.png](/img/user/Z%20appendix/Pasted%20image%2020221015224923.png)
+> ![../../Z appendix/Pasted image 20221015224923.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221015224923.png)
 
  [有些RTF语言可用，实现居中，缩进，加下划线等。](https://mp.weixin.qq.com/s/0LdqbWPN4JJw0bWKQ4mbFg)
 
 ### 2.5. ods excel
 
 > [!note] 示例如图，但少用这种方法 
-> ![../../Z appendix/Pasted image 20221015225149.png](/img/user/Z%20appendix/Pasted%20image%2020221015225149.png)
+> ![../../Z appendix/Pasted image 20221015225149.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221015225149.png)
 
 > [!note] listing输出到excel
-> - ![../../Z appendix/Pasted image 20221126232449.png](/img/user/Z%20appendix/Pasted%20image%2020221126232449.png)
+> - ![../../Z appendix/Pasted image 20221126232449.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221126232449.png)
 > ---
 > - 这样好用些：
-> 	- ![../../Z appendix/Pasted image 20221126232525.png](/img/user/Z%20appendix/Pasted%20image%2020221126232525.png)
+> 	- ![../../Z appendix/Pasted image 20221126232525.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221126232525.png)
 
 ## 3. style及rtf语句设定格式
 
 ### 3.1. 指定标题等类型的style
 
 > [!指定标题等类型的style]
-> ![../../Z appendix/Pasted image 20221015184759.png](/img/user/Z%20appendix/Pasted%20image%2020221015184759.png)
+> ![../../Z appendix/Pasted image 20221015184759.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221015184759.png)
 
 > [!输出sas template 全部自定义的style]
 > 
 > - 输出template定义的style
-> 	- ![../../Z appendix/Pasted image 20221016185410.png](/img/user/Z%20appendix/Pasted%20image%2020221016185410.png)
+> 	- ![../../Z appendix/Pasted image 20221016185410.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221016185410.png)
 
 ### 3.2. rtf语句设定格式
 
@@ -146,23 +146,23 @@ $$\text{exp}\left(\frac{1}{n}\sum_{i=1}^{n}\ln(x_i)\right)=\sqrt[n]{\prod_{i=1}^
 > - `简单常用的`, var2-var4嵌套:
 > 	- column var1 `("total of vars"  var2-var4)`;
 > 	- 示例:
-> 		- ![../../Z appendix/Pasted image 20221015173840.png](/img/user/Z%20appendix/Pasted%20image%2020221015173840.png)
+> 		- ![../../Z appendix/Pasted image 20221015173840.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221015173840.png)
 > - `复杂的`, 如下图是个三级的嵌套, 如第一个是性别嵌套col1与col2，第二层嵌套是自身的嵌套, 第三层可定义col1 col2 label, 虽然示例没有定义
 > 	- column demo group order ("性别\brdrb\brdrs\brdrw10"   `(`  ("男性|N=10"  col1)      ("女性|N=9"  col2)    `)`)      col3;
-> 		- ![../../Z appendix/Pasted image 20221015174115.png](/img/user/Z%20appendix/Pasted%20image%2020221015174115.png)
+> 		- ![../../Z appendix/Pasted image 20221015174115.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221015174115.png)
 
 > [!涉及到的rtf语法]
-> - ![../../Z appendix/Pasted image 20221015181028.png](/img/user/Z%20appendix/Pasted%20image%2020221015181028.png)
+> - ![../../Z appendix/Pasted image 20221015181028.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221015181028.png)
 > 	- 上图`"\li220text"`  左缩进2字符=`"  text"`
 > 	- 若`"\li240text"`，左缩进4字符=`"    text"`
 > 			- 如图，输出样式不同
-> 				- ![../../Z appendix/Pasted image 20221017230320.png](/img/user/Z%20appendix/Pasted%20image%2020221017230320.png)
+> 				- ![../../Z appendix/Pasted image 20221017230320.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221017230320.png)
 
 - ---
 补充：共有变量label换行：
  `column paramn col1 col2  ("所有受试者\par\ N = &pop.\brdrb\brdrs" col3-col7) ;`
 
-![../../Z appendix/Pasted image 20230420170952.png](/img/user/Z%20appendix/Pasted%20image%2020230420170952.png)
+![../../Z appendix/Pasted image 20230420170952.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020230420170952.png)
 	
 
 
@@ -174,15 +174,15 @@ $$\text{exp}\left(\frac{1}{n}\sum_{i=1}^{n}\ln(x_i)\right)=\sqrt[n]{\prod_{i=1}^
 	- `#byval1`，title按照下面语句，by statement的第一个变量的值放到title2
 
 > [!report rtf title随数据变化]
-> - ![../../Z appendix/Pasted image 20221015155153.png](/img/user/Z%20appendix/Pasted%20image%2020221015155153.png)
+> - ![../../Z appendix/Pasted image 20221015155153.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221015155153.png)
 > - ***注意：有时需要改动下位置：***
-> 	- ![../../Z appendix/Pasted image 20230601105153.png](/img/user/Z%20appendix/Pasted%20image%2020230601105153.png)
+> 	- ![../../Z appendix/Pasted image 20230601105153.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020230601105153.png)
 > - ---
-> - ![../../Z appendix/Pasted image 20221015155210.png](/img/user/Z%20appendix/Pasted%20image%2020221015155210.png)
+> - ![../../Z appendix/Pasted image 20221015155210.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221015155210.png)
 > - 同时指定加粗显示: 
 > 	- title2 j=c `"@S={font=('Times roman',10pt) font_weight=bold}Table 14.3.5.&titlen. Summary of &cat. Results - #byval2 (APaT)"`
 > 	- 在公司toc里title2设置更方便:
-> 		- ![../../Z appendix/Pasted image 20221015180119.png](/img/user/Z%20appendix/Pasted%20image%2020221015180119.png)
+> 		- ![../../Z appendix/Pasted image 20221015180119.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221015180119.png)
 
 ## 5. proc report
 
@@ -190,16 +190,16 @@ $$\text{exp}\left(\frac{1}{n}\sum_{i=1}^{n}\ln(x_i)\right)=\sqrt[n]{\prod_{i=1}^
 > 
 >> [!指定排序规则]
 >> - order=option，指定排序规则
->> 	- ![../../Z appendix/Pasted image 20221015161932.png](/img/user/Z%20appendix/Pasted%20image%2020221015161932.png)
+>> 	- ![../../Z appendix/Pasted image 20221015161932.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221015161932.png)
 >
 >> [!order选项， 指定order后的值只出现一次]
->> - ![../../Z appendix/Pasted image 20221015161804.png](/img/user/Z%20appendix/Pasted%20image%2020221015161804.png) 
+>> - ![../../Z appendix/Pasted image 20221015161804.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221015161804.png) 
 >
 >> [!显示missing order记录]
 >> - `默认order为空的不显示这个order组`，需要加选项，proc report xxx `missing`
 >> 	- 或者 define  sex/order `missng`; 
 >> 	- `可在不同地方定义属性，但小范围的属性会覆盖大范围的属性`（如在define定义列宽会覆盖proc report中，覆盖style中） #注意事项/属性范围
->> 	- ![../../Z appendix/Pasted image 20221015164346.png](/img/user/Z%20appendix/Pasted%20image%2020221015164346.png)
+>> 	- ![../../Z appendix/Pasted image 20221015164346.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221015164346.png)
 > 
 >> [!column指定order变量的顺序]
 >> - 如column sex age name，age在sex后面，类似by/first.grp这种。如果column age sex；就没有first sex展示一次结果了
@@ -209,12 +209,12 @@ $$\text{exp}\left(\frac{1}{n}\sum_{i=1}^{n}\ln(x_i)\right)=\sqrt[n]{\prod_{i=1}^
 > [!compute语句块]
 >
 >> [!在group后插入空行, compute after]
->> - ![../../Z appendix/Pasted image 20221015170017.png](/img/user/Z%20appendix/Pasted%20image%2020221015170017.png)
+>> - ![../../Z appendix/Pasted image 20221015170017.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221015170017.png)
 >
 >> [!可在group后(指定位置)放置txt文本]
 >> - `注意这里用@n进行了换行，用proc report的split指定字符不行`
->> - ![../../Z appendix/Pasted image 20221015170044.png](/img/user/Z%20appendix/Pasted%20image%2020221015170044.png)
->> - ![../../Z appendix/Pasted image 20221015170148.png](/img/user/Z%20appendix/Pasted%20image%2020221015170148.png)
+>> - ![../../Z appendix/Pasted image 20221015170044.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221015170044.png)
+>> - ![../../Z appendix/Pasted image 20221015170148.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221015170148.png)
 > 
 >> [!定义compute line属性]
 >> - 定义输出文本的属性
@@ -240,14 +240,14 @@ $$\text{exp}\left(\frac{1}{n}\sum_{i=1}^{n}\ln(x_i)\right)=\sqrt[n]{\prod_{i=1}^
 > - order指定变量，该变量相同值只出现一次-->define sex/order
 > 	- sex改变值, 产生新一页-->break after sex/page
 > 	- `注意:分页变量必须先制定order usage`
-> 	- ![../../Z appendix/Pasted image 20221015172312.png](/img/user/Z%20appendix/Pasted%20image%2020221015172312.png)
+> 	- ![../../Z appendix/Pasted image 20221015172312.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221015172312.png)
 > - 可在proc report后加by语句, 先按照by语句分页,再按照break after page分页 
 
 > [!变量太多，可分为两页展示，每页关键变量（ID）每页保留]
 > - 简单示例:
-> 	- ![../../Z appendix/Pasted image 20221015172658.png](/img/user/Z%20appendix/Pasted%20image%2020221015172658.png)
+> 	- ![../../Z appendix/Pasted image 20221015172658.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221015172658.png)
 > - 项目中的: 
-> 	- ![../../Z appendix/Pasted image 20221015172715.png](/img/user/Z%20appendix/Pasted%20image%2020221015172715.png)
+> 	- ![../../Z appendix/Pasted image 20221015172715.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221015172715.png)
 > 
 
 > [!定义proc report中的style]
