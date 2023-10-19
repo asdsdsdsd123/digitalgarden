@@ -5,7 +5,7 @@
 
 ## 1. 输出rtf 及编程注意事项
 
-![../../../Z appendix/Pasted image 20221209223943 1.png](/img/user/Z%20appendix/Pasted%20image%2020221209223943%201.png)
+![../../../Z appendix/Pasted image 20221209223943 1.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221209223943%201.png)
 
 ## 2. sas代码
 
