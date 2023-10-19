@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-home":null,"permalink":"/02 SAS/02 GTL/项目中的/__Index_of__项目中的/","dgPassFrontmatter":true}
+{"dg-publish":true,"dg-home":null,"tags":["MOC"],"permalink":"/02 SAS/02 GTL/项目中的/__Index_of__项目中的/","dgPassFrontmatter":true}
 ---
 
 
