@@ -25,7 +25,7 @@
 - strip(var)=left(trim(var))；
 - cats(var)=strip(var)，`不过不提示数值转字符的WARNING`
 
-![../../Z appendix/Pasted image 20221012124843.png](/img/user/Z%20appendix/Pasted%20image%2020221012124843.png)  
+![../../Z appendix/Pasted image 20221012124843.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221012124843.png)  
 
 #### 2.1.2. 与空格相关的注意事项：
 
@@ -62,7 +62,7 @@ run;
 > 	- 可用于text-string和宏变量。字符串直接数长度，宏变量解析后，解析值数字符数
 > 	- `对于宏变量解析为空的，返回1`
 
-![../../Z appendix/Pasted image 20221010222747.png](/img/user/Z%20appendix/Pasted%20image%2020221010222747.png)  
+![../../Z appendix/Pasted image 20221010222747.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221010222747.png)  
 
 ## 4. 查找字符串
 
@@ -113,21 +113,42 @@ title: 其他同类函数 anyalnum/alpha/digit/punct,notalnum/alpha/digit/punct
 	- notpunct ：寻找非符号，返回符合的位置
 ```
 
-## 5. 去除、保留字符中某些部分
+## 5. 正则表达式查找
 
-### 5.1. substr scan compress 
+ - 简单示例
+> ![../../Z appendix/Pasted image 20221016185844.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221016185844.png) 
 
-#### 5.1.1. substr scan
+- 详细版 
+> ![../../Z appendix/Pasted image 20221016185850.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221016185850.png)
+
+### 5.1. 示例
+
+```ad-note
+collapse: open
+title: 
+
+- 写法：prxmatch("/正则表达式/",varname)
+	- 正则表达式，匹配`字符串`："/`第\d次给药|筛选期`/"。字符串包含筛选期，或包含第n次给药
+	- 正则表达式，匹配`任一字符`："/`[第\d次给药|筛选期]`/"。字符串包含筛/选/期/第/n/次/给/药
+- 注：大致用法如此，具体怎么匹配的参考可查询相关资料
+
+```
+
+## 6. 去除、保留字符中某些部分
+
+### 6.1. substr scan compress 
+
+#### 6.1.1. substr scan
 - substr(a,1,10)
 	- substr(var,param1,param2)，从param1开始截取，截取长度为param2。param2长度不得大于var的length，否则报错。不指定param2，默认从param1截到字符串末尾
 
 - scan(a,2,".")
 	- scan(var,param1,param2)，`param2指定分隔符，`,截取分隔符的param1段。可不指定param2，使用默认分隔符空格逗号（都包含以上）等。
 	- `可指定第二个字符为负号，则倒着截取：
-![../../Z appendix/Pasted image 20221011162904.png](/img/user/Z%20appendix/Pasted%20image%2020221011162904.png)
+![../../Z appendix/Pasted image 20221011162904.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221011162904.png)
 
 
-#### 5.1.2. compress
+#### 6.1.2. compress
  - compress (var，chars，modifiers)。chars区分大小写
  -  项目中这样用，在复杂文本，如保留数值+小数点：
 	 - `Compress(var,"0123456789.","k")，等价于Compress(var,".","kd")`
@@ -154,18 +175,18 @@ title: 其他同类函数 anyalnum/alpha/digit/punct,notalnum/alpha/digit/punct
 		- X 增加十六进制字符
  -  [见网页](http://blog.sina.com.cn/s/blog_6e0a03730100mwv9.html)
 
-#### 5.1.3. Ksubstr/Kscan/Kcompress
+#### 6.1.3. Ksubstr/Kscan/Kcompress
 
 - 与不加K的函数用法基本一致，不过以字数为单位非字节。如一个汉字是3个字节，但是是1个汉字(或者算两个位数)。涉及中文string的，最好用K开头的函数处理，klenth同理。
  
-![../../Z appendix/Pasted image 20221012235814.png](/img/user/Z%20appendix/Pasted%20image%2020221012235814.png)
+![../../Z appendix/Pasted image 20221012235814.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221012235814.png)
 
 如项目中，中文太长，需要200字符一拆分放，XXTERM--XXTERMn。
 
->  ![../../Z appendix/Pasted image 20221012234711.png](/img/user/Z%20appendix/Pasted%20image%2020221012234711.png)  
-> ![../../Z appendix/Pasted image 20221128214728.png](/img/user/Z%20appendix/Pasted%20image%2020221128214728.png)
+>  ![../../Z appendix/Pasted image 20221012234711.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221012234711.png)  
+> ![../../Z appendix/Pasted image 20221128214728.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221128214728.png)
 
-## 6. cat系列，连接文本
+## 7. cat系列，连接文本
 
  > [!note]+ cat系列，cats与catx常用
 > - cat(`of` var1`-`var4)=
@@ -182,12 +203,12 @@ title: 其他同类函数 anyalnum/alpha/digit/punct,notalnum/alpha/digit/punct
 > - catx(`","`,`of` var1-var4)=
 > 	- strip(var1)||","||strip(var1)||","||strip(var1)||","||….
 
-## 7. count系列，对指定str计数
+## 8. count系列，对指定str计数
 
 - count/countc/countw
 
-![../../Z appendix/Pasted image 20221012224332.png](/img/user/Z%20appendix/Pasted%20image%2020221012224332.png)
-### 7.1. count及countc
+![../../Z appendix/Pasted image 20221012224332.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221012224332.png)
+### 8.1. count及countc
 
 - 用法：count/countc(var,"str",modifier)。
 	- count计算var中指定字符str出现的次数
@@ -209,7 +230,7 @@ run;
 ```
 
 
-### 7.2. countw
+### 8.2. countw
 
 - 用法：countw(var,"分隔符")，计算分隔符下var中，可分为几部分
 	- countw(var)=countw(var," ")，默认按照空格逗号等【空格!$%&()✳+,-./;<^|】，一起作为分隔符分隔计数。
@@ -225,18 +246,18 @@ run;
  ```
 
 
- ![../../Z appendix/Pasted image 20221012225105.png](/img/user/Z%20appendix/Pasted%20image%2020221012225105.png)
+ ![../../Z appendix/Pasted image 20221012225105.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221012225105.png)
 
-## 8. translate与tranwrd，替换文本
+## 9. translate与tranwrd，替换文本
 
 - transwrd(var, "var-str","spec-str")
-> ![../../Z appendix/Pasted image 20221012225842.png](/img/user/Z%20appendix/Pasted%20image%2020221012225842.png)
+> ![../../Z appendix/Pasted image 20221012225842.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221012225842.png)
 
 - translate(var,"spec-str","var-str")
 
-> ![../../Z appendix/Pasted image 20221012225811.png](/img/user/Z%20appendix/Pasted%20image%2020221012225811.png)
+> ![../../Z appendix/Pasted image 20221012225811.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221012225811.png)
 
-### 8.1. 项目中应用
+### 9.1. 项目中应用
 
 - 应用扩展，如去除项目中的特殊符号：换行符/Tab符号等，保留文本中间的空格
 - 以下是将这些特殊符号抓为了空格
@@ -247,50 +268,14 @@ run;
 - 这些'0A'x及'0D'x为hex的写法，项目中遇到的不明特殊符号，可put hex再去除
 	- put hex：如把数据中的不明符号复制过来(放到xx变量)，再 put xx hex，看日志的十六进制码
 
-## 9. 其他字符函数
+`put var hex.  一个numeric put两位0'X`
 
-### 9.1. coalesce(s)，选择最近的非空值
+![../../Z appendix/Pasted image 20230227160907.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020230227160907.png)
 
-- 回数值（coalesce）/字符(coalescec)变量的第一个非空的value
-	- y=coalesces（x1，x2，x3），依次查找x1，x2，x3的值，将其非缺失值value赋予y
-- 如，令bc=ac，若缺失ac，赋值bc为"missing"：bc=coalescec(ac,“missng”)
-
-### 9.2. 正则表达式
-
- - 简单示例
-> ![../../Z appendix/Pasted image 20221016185844.png](/img/user/Z%20appendix/Pasted%20image%2020221016185844.png) 
-
-- 详细版 
-> ![../../Z appendix/Pasted image 20221016185850.png](/img/user/Z%20appendix/Pasted%20image%2020221016185850.png)
-
-#### 9.2.1. 示例
-
-```ad-note
-collapse: open
-title: 
-
-- 写法：prxmatch("/正则表达式/",varname)
-	- 正则表达式，匹配`字符串`："/`第\d次给药|筛选期`/"。字符串包含筛选期，或包含第n次给药
-	- 正则表达式，匹配`任一字符`："/`[第\d次给药|筛选期]`/"。字符串包含筛/选/期/第/n/次/给/药
-- 注：大致用法如此，具体怎么匹配的参考可查询相关资料
-
-```
-
-### 9.3. repeat与reverse，文本重复
-
-- repeat("ONE",2)-----ONEONE
-- reverse("xyz")-------zyx
-
-
-## 10. put显示特殊字符
-
-put var hex.  一个numeric put两位0'X
-
-![../../Z appendix/Pasted image 20230227160907.png](/img/user/Z%20appendix/Pasted%20image%2020230227160907.png)
 
 ````ad-light-green
-
-SAS代码去除字符的特殊字符值
+collapse: open
+title: SAS代码去除字符的特殊字符值
 
 ```sas
 %macro dck_special_char(_insds=, _outsds=, comp=);
@@ -318,5 +303,23 @@ run;
 %mend dck_special_char;
 ```
 ````
+
+## 10. 其他字符函数
+
+### 10.1. coalesce(s)，选择最近的非空值
+
+- 回数值（coalesce）/字符(coalescec)变量的第一个非空的value
+	- y=coalesces（x1，x2，x3），依次查找x1，x2，x3的值，将其非缺失值value赋予y
+- 如，令bc=ac，若缺失ac，赋值bc为"missing"：bc=coalescec(ac,“missng”)
+
+### 10.2. repeat与reverse，文本重复
+
+- repeat("ONE",2)-----ONEONE
+- reverse("xyz")-------zyx
+
+### 10.3. 返回简单字符的编码
+
+- rank函数，rank("A")=65(数值型)
+	- 注意：rank("ABC")也是65
 
 
