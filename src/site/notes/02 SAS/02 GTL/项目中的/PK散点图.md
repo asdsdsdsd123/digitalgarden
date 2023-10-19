@@ -5,7 +5,7 @@
 
 # 1. 输出结果
 
-![../../../Z appendix/Pasted image 20230125214924.png](/img/user/Z%20appendix/Pasted%20image%2020230125214924.png)
+![../../../Z appendix/Pasted image 20230125214924.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020230125214924.png)
 
 ---
 
@@ -86,7 +86,7 @@ run;
 
 ## 2. 输出的数据集：
 
-![../../../Z appendix/Pasted image 20230125215135.png](/img/user/Z%20appendix/Pasted%20image%2020230125215135.png)
+![../../../Z appendix/Pasted image 20230125215135.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020230125215135.png)
 
 ---
 
@@ -214,7 +214,7 @@ ods listing;
 collapse: open
 title: 2.drawtext对图片注释
 
-![Pasted image 20230125221143.png](/img/user/Z%20appendix/Pasted%20image%2020230125221143.png)
+![Pasted image 20230125221143.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020230125221143.png)
 - ---
 
 `drawtext绘制文本内容，有用unicode。以一个drawtext表示绘制一行文本，下一个drawtext绘制内容换下一行`
@@ -231,7 +231,7 @@ title: 2.drawtext对图片注释
 		entry halign=left "p = " aucp0/ textattrs=(size=10 family="Times New Roman");
 	endlayout;
 
- ![../../../Z appendix/Pasted image 20230125222054.png](/img/user/Z%20appendix/Pasted%20image%2020230125222054.png)
+ ![../../../Z appendix/Pasted image 20230125222054.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020230125222054.png)
 
 
 
