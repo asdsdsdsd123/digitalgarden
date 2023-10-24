@@ -476,30 +476,12 @@ $<div class="markdown-embed-title">
 
 </div></div>
 
- 
-<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
-
-$<div class="markdown-embed-title">
-
-# __Index_of__300 Zotero notes
-
-</div>
-
-
-
- [[300 Zotero notes/01 EngWords/__Index_of__01 EngWords\|__Index_of__01 EngWords]]
- [[Z Files for obsidian/Telix SAP\|Telix SAP]]
-
-
-
-</div></div>
-
  [[00 学习使用OB/__Index_of__00 学习使用OB\|__Index_of__00 学习使用OB]]
  [[00 Template/__Index_of__00 Template\|__Index_of__00 Template]]
  [[01 日记/__Index_of__01 日记\|__Index_of__01 日记]]
  [[100 PDF/__Index_of__100 PDF\|__Index_of__100 PDF]]
  [[200 英语学习/__Index_of__200 英语学习\|__Index_of__200 英语学习]]
- [[我的Zeotero库/__Index_of__我的Zeotero库\|__Index_of__我的Zeotero库]]
+ [[300 Zotero notes/__Index_of__300 Zotero notes\|__Index_of__300 Zotero notes]]
  [[A Excalidraw/__Index_of__A Excalidraw\|__Index_of__A Excalidraw]]
  [[Excalidraw/__Index_of__Excalidraw\|__Index_of__Excalidraw]]
  [[PDF注释/__Index_of__PDF注释\|__Index_of__PDF注释]]
