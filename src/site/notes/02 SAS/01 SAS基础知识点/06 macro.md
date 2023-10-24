@@ -100,7 +100,7 @@
 
 ## 4. 宏的option
 
-> [!option]
+> [!macro指定的option]
 > 在%macro指定的option权限高于option语句指定的 #注意事项/属性范围 
 >> [!可在%macro中写的option,%macro name/option]
 >>
@@ -132,6 +132,19 @@
 
 ## 5. 宏的存储及调用
 
+```ad-note
+collapse: open
+title: 项目中的储存及调用宏程序
+
+- libname utility "&_rootpath.\macros";
+- options mstored sasmstore=utility;
+- option mautosource sasautos=(sasautos, "&_rootpath.\macros", "&_rootpath.\macros\qc");
+
+- ![../../Z appendix/Pasted image 20231023163445.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020231023163445.png)
+	- `注意，在新的程序里可以直接用，不用再写宏的编译过程`
+
+```
+
 > [!写宏的时候，可以指定加密宏程序]
 > ![../../Z appendix/Pasted image 20221016154506.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221016154506.png)
 > 
@@ -161,10 +174,11 @@
 > 
 
 ### 5.3. Stored compiled macro facility
+可将存放mylib定义位置下的sasmacr.sas7bcat文件读取其中的宏程序，直接使用*
 
 - Stored compiled macro facility
-	- libname `mylib` 'SAS-data-library';
-	- options `mstored` `sasmstore`=`mylib`;
+	- libname `mylib` 'SAS-data-library';  ***注意需要先有libname定义地址***
+	- options `mstored` `sasmstore`=`mylib`; ***取该地址的sas7bacat文件，获取编译好的宏程序
 
 > [! Stored compiled macro facility使用]
 > - 定义后存储宏：
