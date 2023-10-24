@@ -125,7 +125,7 @@ proc format;
 >> - `select /*exclude*/`  dsname;
 >> - run;
 >
->> [!输出到xpt格式]-
+>> [!输出到xpt格式]+
 >> - libname `outxpt` `xport` "c:\cuifan\class.xpt";
 >> - proc copy in=sashelp out=`outxpt` `mt`=data;select class;run;
 
@@ -147,6 +147,8 @@ proc format;
 >> - tables agegr\*sex/`missing`
 >> 	- ![../../Z appendix/Pasted image 20221015113045.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221015113045.png)
 >> 	- 上图ods output输出统计量到sas数据集，关键字可在ods trace on得到
+>> - 可加使用format，对连续资料进行group，计算group的计数分布情况
+>> 	- ![../../Z appendix/Pasted image 20231023144851.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020231023144851.png)
 >> - 其他卡方相关统计选项见其他章节
 >
 
@@ -175,6 +177,18 @@ proc format;
 
 - Proc means指定分类变量可用by，也可用class（`需在proc means 加nway选项）；可计算stderr。`
 
+````ad-note
+collapse: open
+title: PROC means计算描述性统计量
+加选项clm计算95%CI
+```sas
+title "Computing a 95% Confidence Interval and the Standard Error"; 
+proc means data=example.Blood_Pressure n mean clm stderr maxdec=3;  
+	class Drug; 
+	var SBP DBP; 
+run;
+```
+````
 ## 11. proc univariate
 
 - Proc univariate可以进行样本正态性检验，但`指定分类变量时只能用by`
@@ -183,10 +197,8 @@ proc format;
 > 
 > ![../../Z appendix/Pasted image 20221017231127.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221017231127.png) ![../../Z appendix/Pasted image 20221017231201.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221017231201.png)
 
+
 ## 12. proc report
 
 - [[02 SAS/01 SAS基础知识点/05 Proc report及ods style设置\|很重要，后面文档单独列出]]
-
-
-
 
