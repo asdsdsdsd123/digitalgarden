@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-home":true,"tags":["MOC","gardenEntry","gardenEntry"],"permalink":"/__Index_of__demo/","dgPassFrontmatter":true}
+{"dg-publish":true,"dg-home":true,"tags":["MOC","gardenEntry","gardenEntry","gardenEntry"],"permalink":"/__Index_of__demo/","dgPassFrontmatter":true}
 ---
 
 
