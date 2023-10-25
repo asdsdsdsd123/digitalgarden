@@ -180,7 +180,7 @@ proc format;
 ````ad-note
 collapse: open
 title: PROC means计算描述性统计量
-加选项clm计算95%CI
+- 加选项clm计算95%CI
 ```sas
 title "Computing a 95% Confidence Interval and the Standard Error"; 
 proc means data=example.Blood_Pressure n mean clm stderr maxdec=3;  
@@ -188,16 +188,34 @@ proc means data=example.Blood_Pressure n mean clm stderr maxdec=3;
 	var SBP DBP; 
 run;
 ```
+- 也可通过proc ttest计算CLM
+
+```sas
+proc ttest data=exercise ; 
+	var Age;
+run;
+```
+
 ````
 ## 11. proc univariate
 
 - Proc univariate可以进行样本正态性检验，但`指定分类变量时只能用by`
+- 可计算篇幅，峰度
 
 > [!proc mean与proc univariate做基线的统计量]
 > 
 > ![../../Z appendix/Pasted image 20221017231127.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221017231127.png) ![../../Z appendix/Pasted image 20221017231201.png|undefined](/img/user/Z%20appendix/Pasted%20image%2020221017231201.png)
 
+````ad-note
+collapse: open
+title: 检验正态性/方差齐性检验像PROC TTEST会自动检验执行输出
 
+- proc univariate data=exercise `normal`; 
+	- var Age; 
+		- `probplot / normal (mu=est sigma=est)`; `/*会汇出Q-Q图，对角线显示VAR指定的Age变量，表明正态分布*/`
+- run;
+
+````
 ## 12. proc report
 
 - [[02 SAS/01 SAS基础知识点/05 Proc report及ods style设置\|很重要，后面文档单独列出]]
