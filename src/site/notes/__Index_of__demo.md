@@ -116,14 +116,14 @@ $<div class="markdown-embed-title">
 
 
 
- [[03 STAT/书中的统计知识/第1章 前言+基础理论\|第1章 前言+基础理论]]
- [[03 STAT/书中的统计知识/第2章 假设检验相关概念\|第2章 假设检验相关概念]]
- [[03 STAT/书中的统计知识/第4章 One-Sample t-Test\|第4章 One-Sample t-Test]]
- [[03 STAT/书中的统计知识/第5章 Two-Sample t-Test\|第5章 Two-Sample t-Test]]
- [[03 STAT/书中的统计知识/第6章 One-Way ANOVA\|第6章 One-Way ANOVA]]
- [[03 STAT/书中的统计知识/第7章 Two-Way ANOVA\|第7章 Two-Way ANOVA]]
- [[03 STAT/书中的统计知识/第8章 Repeated Measures Analysis\|第8章 Repeated Measures Analysis]]
- [[03 STAT/书中的统计知识/第9章 The Crossover Design\|第9章 The Crossover Design]]
+ [[03 STAT/书中的统计知识/第01章 前言+基础理论\|第01章 前言+基础理论]]
+ [[03 STAT/书中的统计知识/第02章 假设检验相关概念\|第02章 假设检验相关概念]]
+ [[03 STAT/书中的统计知识/第04章 One-Sample t-Test\|第04章 One-Sample t-Test]]
+ [[03 STAT/书中的统计知识/第05章 Two-Sample t-Test\|第05章 Two-Sample t-Test]]
+ [[03 STAT/书中的统计知识/第06章 One-Way ANOVA\|第06章 One-Way ANOVA]]
+ [[03 STAT/书中的统计知识/第07章 Two-Way ANOVA\|第07章 Two-Way ANOVA]]
+ [[03 STAT/书中的统计知识/第08章 Repeated Measures Analysis\|第08章 Repeated Measures Analysis]]
+ [[03 STAT/书中的统计知识/第09章 The Crossover Design\|第09章 The Crossover Design]]
  [[03 STAT/书中的统计知识/第10章 Linear Regression\|第10章 Linear Regression]]
  [[03 STAT/书中的统计知识/第11章 Analysis of Covariance  ANCOVA协方差分析\|第11章 Analysis of Covariance  ANCOVA协方差分析]]
  [[03 STAT/书中的统计知识/第12章 Wilcoxon Signed-Rank Test符号秩检验\|第12章 Wilcoxon Signed-Rank Test符号秩检验]]
